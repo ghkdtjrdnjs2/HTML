@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자</title>
+    <style>
+        /* 태그선택자(1), . = 클래스선택자(10), # = 아이디선택자(100) 아이디는 한페이지에 하나밖에 사용할수없다. 
+            선택자는 숫자가 높을수록 이긴다   
+        */
+        p { font-weight: bold; color: red;}
+        .underline { text-decoration: underline;}
+        span.underline { text-decoration: none;} /*span.= span중에서 .=중에서 */
+        #target { color: yellow;}
+    </style>
+</head>
+<body>
+    <p>우리나라 좋은나라</p>
+    <p class="underline" id="target">우리나라 좋은나라</p>
+    <p>우리나라 좋은나라</p>
+    <p class="underline">우리나라 좋은나라</p>
+    <p>우리나라 좋은나라</p>
+    <span class="underline">연습</span>
+    <!--
+        html 작성자
+        ccs, 그래픽 : web 퍼블리셔
+        자바스크립트 : forntend 웹 프로그래밍
+    -->
+    
+</body>
+</html>
