@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>시맨틱 태그(의미가 있고 디자인이 존재하지 않는다)를 이용한 레이아웃 : 시맨틱 마크업</title>
+        <style>
+            *{ box-sizing: border-box;}
+            #app { width: 1000px; margin: 0 auto; border: 1px solid red;}
+            header, nav, footer { height: 50px; border: 1px solid skyblue;}
+            aside {height: 200px; width: 100px; float: left; background-color: deeppink; }
+            .left { float: left;}
+            section { width: 798px; float: left;}
+            .right { float: right;}
+            main { overflow: hidden;}
+            section { min-height: 600px; background-color: lightgray;}
+        </style>
+    </head>
+    <body>
+        <div id="app">
+            <header>로고</header>
+            <nav>메인 메뉴</nav>
+            <main>
+                <aside class="left">왼쪽</aside>
+                <section>
+                    특수문자 작다 : &lt;<br>
+                    공백 : &nbsp;
+                </section>
+                <aside class="right">오른쪽</aside>
+            </main>
+            <footer>
+                <!-- html entity code : 특수문자 넣는 방법 -->
+                copyright &copy;2024
+            </footer>
+
+        </div>
+    </body>
+</html>

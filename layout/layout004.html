@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #app { 
+            width: 600px; margin: 0 auto; border: 1px solid red;
+        }
+        header, nav, footer { height: 50px; border: 1px solid skyblue;}
+        aside { width: 100px; height: 200px; background-color: deeppink;}
+        .left { float: left;}
+        .right { float:right;}
+        section { width: 398; float: left;}
+    </style>
+</head>
+<body>
+    <div id="app">
+        <header>로고</header>
+            <nav>메인 메뉴</nav>
+            <main>
+                <aside class="left">왼쪽</aside>
+                <section>
+                특수문자 작다 : &lt;<br>
+                공백 : &NonBreakingSpace;
+                </section>
+                <aside class="right">오른쪽</aside>
+            </main>
+        <footer>
+            copyrigt &copy;2024
+        </footer>
+    </div>
+</body>
+</html>
