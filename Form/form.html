@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <!-- form의 내용이 action속성으로 전달된다 (form안에는 내용이 무조건 있어야한다) -->
+    <!-- form의 내용을 전달하는 것을 submit이라고 한다 -->
+    <!-- form안에 있는 버튼은 submit으로 동작한다 -->
+    <!-- url(주소)넘기는 방식은 get, post, put, patch, delete : method(메소드) 라고 한다 -->
+    <!-- submit하지 않으려면 type='button'으로 지정하면 서밋하지 않는다 -->
+    
+    <!-- get : 서버의 변경사항이 없다. 반복실행해도 상관없다 -->
+    <!-- post : 서버가 변경된다. 반복실행하면 안된다(쇼핑몰 결제) -->
+    <form action="http://www.icia.co.kr"> <!--method="get" enctype="" / action은 반드시 정해줘야한다 method는 기본값이 get enctype은 기본값이 text-->
+        <input name="num" value="100"> <!-- 무조건 물음표로(?)시작-->
+        <button>보내기</button>
+    </form>
+</body>
+</html>
