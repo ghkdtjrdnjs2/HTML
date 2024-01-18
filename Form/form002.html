@@ -1,0 +1,28 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <form action="http://localhost:5000/sample1" method="get">          <!-- enctype도있는데 지금 안써서 빼놨다 기본값 : text -->
+            <!-- 
+                id 속성 : 프론트(css, js)에서 사용하는 이름
+                name 속성 : 백에서 사용하는 이름
+
+                http://localhost:5000/sample1?irum=spring&password=1234
+             -->
+            <input name="irum" id="irum" value="spring"><br>                <!-- input은 폼안에만 있고, 반드시 name이 들어가야 한다 input name="" -->
+            <input name="password" value="1234"><br>
+            <input id="nai" value="20"><br>
+            <button>보내기</button>
+
+        </form>
+        <!--
+             front와 back는 둘 다 백에서 운영할 수 있다(MVC 또는 model2 방식)
+                - only web
+                - front -> back : form
+                - back -> front : back기술마다 다르다. jinja2사용할것
+             front와 back는 별개로 운영할 수 있다(rest 방식)
+                -프론트와 백을 분리
+                 (web,안드로이드,ios 프론트를 백과 동시에 개발할 수 있다)
+                -->
+    </body>
+</html>
